@@ -1,6 +1,7 @@
 # Training-Habitat-PointNav-with-a-Custom-.glb-Scene
 This tutorial demonstrates how to train and evaluate a PointNav agent in Habitat using your own .glb 3D model.
 The workflow includes:
+
 1.Modifying Habitat-Lab configuration
 
 2.Generating a navigation mesh (NavMesh)
@@ -123,6 +124,8 @@ habitat_baselines:
       use_linear_lr_decay: true
       reward_window_size: 50
       use_double_buffered_sampler: false
+
+
 
 6. Training & Evaluation Commands
 rm data/new_checkpoints/.habitat-resume-stateeval.pth
