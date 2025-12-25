@@ -48,6 +48,8 @@ a.Agent height: 1.5 m
 b.Agent radius: 0.25 m
 c.climbing (agent_max_climb = 0.2)
 Please use the scripts provided in this repository.(genNavmesh.py)
+⚠️ **Note**  
+Please make sure to update all file paths according to your local environment.
 
 4. Generate a Custom PointNav Dataset
 This step creates a .json.gz dataset containing navigation episodes.
@@ -67,6 +69,8 @@ Episode Structure:
   "goals": [{ "position": [x, y, z] }]
 }
 Please use the scripts provided in this repository.(genDataset.py)
+⚠️ **Note**  
+Please make sure to update all file paths according to your local environment.
 
 5. PPO PointNav Configuration
 Please run training first (`habitat_baselines.evaluate=False`), and then run evaluation (`habitat_baselines.evaluate=True`).Training must be executed first with `habitat_baselines.evaluate=False`.
