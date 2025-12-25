@@ -27,7 +27,6 @@ In habitat-baselines/habitat_baselines/run.py, update the Hydra decorator to use
 
 Edit the dataset configuration file:
 habitat-lab/habitat/config/habitat/dataset/pointnav/gibson.yaml
-# @package habitat.dataset
 defaults:
   - /habitat/dataset: dataset_config_schema
   - _self_
@@ -72,7 +71,6 @@ Please use the scripts provided in this repository.(genDataset.py)
 Please run training first (`habitat_baselines.evaluate=False`), and then run evaluation (`habitat_baselines.evaluate=True`).Training must be executed first with `habitat_baselines.evaluate=False`.
 After training completes, run evaluation with `habitat_baselines.evaluate=True`.
 ppo_pointnav.yaml:
-# @package _global_
 #num_environment=.glb_number
 
 defaults:
